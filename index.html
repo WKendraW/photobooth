@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherBooth</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="welcome">
+      <h1>TogetherBooth</h1>
+      <p>Take photos together, even from far away</p>
+      <button id="create-session">Create Session</button>
+      <div id="join-section">
+        <input type="text" id="session-code" placeholder="Enter session code">
+        <button id="join-session">Join Session</button>
+      </div>
+    </div>
+    <div id="session" style="display: none;">
+      <div id="cameras">
+        <video id="my-video" autoplay muted></video>
+        <video id="peer-video" autoplay></video>
+      </div>
+      <div id="controls">
+        <div id="turn-indicator">Waiting for peer...</div>
+        <button id="take-photo" disabled>Take Photo</button>
+        <div id="countdown" style="display: none;"></div>
+      </div>
+      <div id="strip-container">
+        <canvas id="strip-canvas"></canvas>
+      </div>
+      <button id="download-strip" style="display: none;">Download Strip</button>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">/workspaces/photobooth/index.html
